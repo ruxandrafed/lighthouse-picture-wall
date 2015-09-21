@@ -23,7 +23,15 @@ body {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px; }
+    padding: 6px;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s; }
     #team-members .member img {
       -webkit-border-radius: 40px;
       -moz-border-radius: 40px;
@@ -33,14 +41,14 @@ body {
       width: 200px;
       height: 200px; }
     #team-members .member:hover {
-      transform: scale(2, 2);
-      -webkit-transform: scale(2, 2);
-      -moz-transform: scale(2, 2);
-      -ms-transform: scale(2, 2);
-      transition-duration: 5s;
-      -webkit-transition-duration: 5s;
-      -moz-transition-duration: 5s;
-      -ms-transition-duration: 5s; }
+      transform: scale(1.2, 1.2);
+      -webkit-transform: scale(1.2, 1.2);
+      -moz-transform: scale(1.2, 1.2);
+      -ms-transform: scale(1.2, 1.2);
+      transition-duration: 2s;
+      -webkit-transition-duration: 2s;
+      -moz-transition-duration: 2s;
+      -ms-transition-duration: 2s; }
       #team-members .member:hover .overlay {
         display: inline-block; }
       #team-members .member:hover .original {
