@@ -60,7 +60,7 @@ body {
       height: 200px;
     }
 
-    &:hover{
+    &:nth-child(even):hover{
       @include transform-scale(1.2,1.2);
       .overlay{
       display: inline-block;
@@ -68,6 +68,10 @@ body {
       .original{
       display: none;
       }
+    }
+
+    &:nth-child(odd):hover{
+      opacity: 0.4;
     }
 
     .overlay {

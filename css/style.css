@@ -40,7 +40,7 @@ body {
       box-shadow: 5px 5px 5px #d2d2d2;
       width: 200px;
       height: 200px; }
-    #team-members .member:hover {
+    #team-members .member:nth-child(even):hover {
       transform: scale(1.2, 1.2);
       -webkit-transform: scale(1.2, 1.2);
       -moz-transform: scale(1.2, 1.2);
@@ -49,10 +49,12 @@ body {
       -webkit-transition-duration: 2s;
       -moz-transition-duration: 2s;
       -ms-transition-duration: 2s; }
-      #team-members .member:hover .overlay {
+      #team-members .member:nth-child(even):hover .overlay {
         display: inline-block; }
-      #team-members .member:hover .original {
+      #team-members .member:nth-child(even):hover .original {
         display: none; }
+    #team-members .member:nth-child(odd):hover {
+      opacity: 0.4; }
     #team-members .member .overlay {
       display: none; }
     #team-members .member div.name {
