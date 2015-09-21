@@ -14,5 +14,11 @@ body {
     #team-members .member img {
       width: 200px;
       height: 200px; }
+    #team-members .member:hover .overlay {
+      display: inline-block; }
+    #team-members .member:hover .original {
+      display: none; }
+    #team-members .member .overlay {
+      display: none; }
     #team-members .member div.name {
       text-align: center; }
