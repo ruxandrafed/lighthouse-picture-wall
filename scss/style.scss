@@ -7,6 +7,17 @@ $primaryColor: #FF0000;
           border-radius: $radius;
 }
 
+@mixin transform-scale($x,$y) {
+          transform: scale($x,$y);
+  -webkit-transform: scale($x,$y);
+     -moz-transform: scale($x,$y);
+      -ms-transform: scale($x,$y);
+          transition-duration: 5s;
+  -webkit-transition-duration: 5s;
+     -moz-transition-duration: 5s;
+      -ms-transition-duration: 5s;
+}
+
 body {
 
   font-family: Verdana;
@@ -42,11 +53,14 @@ body {
     padding: 6px;
 
     img {
+      @include border-radius(40px);
+      box-shadow: 5px 5px 5px #d2d2d2;
       width: 200px;
       height: 200px;
     }
 
     &:hover{
+      @include transform-scale(2,2);
       .overlay{
       display: inline-block;
       }
